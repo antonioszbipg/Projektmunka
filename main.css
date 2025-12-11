@@ -16,11 +16,26 @@ body{
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    transition: transform .2s;
+    border: 2px solid white; 
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-img {
+    align-self: center;
     height: 40%;
     object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;                        
+    padding: 4px;                              
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 12px;
 }
 
 .card-h3 {
@@ -31,4 +46,16 @@ body{
     padding: 0 20px 20px;
     flex-grow: 1;
     color: #555;
+    font-family: cursive;
+}
+
+#bj {
+    text-align: center  ;
+    color: white;
+    font-family: cursive;
+    font-size:xx-large;
+}
+
+.card-h3 {
+    font-family: cursive;
 }
